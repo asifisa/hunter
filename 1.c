@@ -20,6 +20,12 @@ int main()
             }
         }
     }
+    if(k==0)
+    {
+        printf("unique");
+    }
+    else
+    {
     //printf("\n");
     for(i=0;i<k-1;i++)
     {
@@ -37,6 +43,7 @@ int main()
         {
             printf("%d ",b[i]);
         }
+    }
     }
     return 0;
 }
