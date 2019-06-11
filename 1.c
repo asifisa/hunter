@@ -2,16 +2,28 @@
 #include<string.h>
 int main()
 {
-    char s[100];
-    scanf("%s",s);
-    if(s[0]=='S')
+    int n,i,j,k=0,a[1000],b[100];
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
     {
-        printf("yes");
+        scanf("%d ",&a[i]);
     }
-    else
+    for(i=0;i<n-1;i++)
     {
-        printf("no");
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i]==a[j])
+            {
+                //printf("%d ",a[i]);
+                b[k]=a[i];
+                k++;
+            }
+        }
     }
-    
+    //printf("\n");
+    for(i=0;i<k;i++)
+    {
+        printf("%d ",b[i]);
+    }
     return 0;
 }
