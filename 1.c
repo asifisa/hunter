@@ -21,9 +21,22 @@ int main()
         }
     }
     //printf("\n");
+    for(i=0;i<k-1;i++)
+    {
+        for(j=i+1;j<k;j++)
+        {
+            if(b[i]==b[j])
+            {
+                b[j]=0;
+            }
+        }
+    }
     for(i=0;i<k;i++)
     {
-        printf("%d ",b[i]);
+        if(b[i]!=0)
+        {
+            printf("%d ",b[i]);
+        }
     }
     return 0;
 }
